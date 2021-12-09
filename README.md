@@ -1,4 +1,4 @@
-# <a href="https://github.com/Kind333/Arch-all-settings/tree/master"><b>Arch-all-settings</b></a>
+# <a href="https://github.com/Kind333/Arch-all-settings/tree/master"><b>Arch Linux all settings</b></a>
 
 # <a href="https://github.com/Kind333/Arch-all-settings/tree/master/polybar"><b>Polybar</b></a>
 ![P_Thursday,December,2021](https://user-images.githubusercontent.com/86479460/145339140-300b3dac-5905-4cc3-880d-29c73e7ba0a9.png)
