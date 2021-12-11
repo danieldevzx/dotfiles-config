@@ -5,9 +5,12 @@
 
 # <a href ="https://github.com/Kind333/Arch-all-settings/tree/master/i3"><b>i3 wm</b></a>
 ![2021-12-09-02:26:41_1366x768_screenshot](https://user-images.githubusercontent.com/86479460/145339674-0c51ced4-cf75-41c2-b8e0-628fcc0cd192.png)
+
+# <a href ="https://github.com/Kind333/Arch-all-settings/tree/master/script"><b>Script</b></a>
+
 # Dependeces
 picom
 nitrogen
 rofi
 rofi-beats
-shots
+shots + xclip
