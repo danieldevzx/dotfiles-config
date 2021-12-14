@@ -1,16 +1,16 @@
 ;==========================================================================================;
-;                                                                                          ;     
+;                                                                                          ;
 ;                                                                                          ;
 ;    ______  _____  _     __   ________   ___  ______             _                        ;
 ;    | ___ \|  _  || |    \ \ / /| ___ \ / _ \ | ___ \           | |                       ;
-;    | |_/ /| | | || |     \ V / | |_/ // /_\ \| |_/ /           | |__   _   _             ;     
-;    |  __/ | | | || |      \ /  | ___ \|  _  ||    /            | '_ \ | | | |            ;     
+;    | |_/ /| | | || |     \ V / | |_/ // /_\ \| |_/ /           | |__   _   _             ;
+;    |  __/ | | | || |      \ /  | ___ \|  _  ||    /            | '_ \ | | | |            ;
 ;    | |    \ \_/ /| |____  | |  | |_/ /| | | || |\ \            | |_) || |_| |            ;
-;    \_|     \___/ \_____/  \_/  \____/ \_| |_/\_| \_|           |_.__/  \__, |            ;     
-;                                                                         __/ |            ;     
+;    \_|     \___/ \_____/  \_/  \____/ \_| |_/\_| \_|           |_.__/  \__, |            ;
+;                                                                         __/ |            ;
 ;                                                                        |___/             ;
-;                                                                                          ;     
-;                                                                                          ;     
+;                                                                                          ;
+;                                                                                          ;
 ;               :::    ::: ::::::::::: ::::    ::: :::::::::                               ;
 ;               :+:   :+:      :+:     :+:+:   :+: :+:    :+:                              ;
 ;               +:+  +:+       +:+     :+:+:+  +:+ +:+    +:+                              ;
@@ -21,7 +21,7 @@
 ;                                                                                          ;
 ;                                                                                          ;
 ;   Theme:green-nature-hack                                                                ;
-;   By: Kind                                                                               ;                                 
+;   By: Kind                                                                               ;
 ;                                                                                          ;
 ;                                                                                          ;
 ;==========================================================================================;
@@ -71,8 +71,9 @@ font-2 = siji:pixelsize=1;2
 font-3 = Font Awesome 5 Free Regular:style = Regular;pixelsize=1;2
 font-4 = Font Awesome 5 Free Solid:style = Solid;pixelsize=1;2
 font-5 = Font Awesome 5 Free Brands:style = Brands;pixelsize=1;2
+;font-6 = Nerd Font
 
-modules-left = i3 rofi-beats
+modules-left = i3 rofi-beats rofi-br
 modules-center = scrot date
 modules-right = pulseaudio memory cpu wlan battery xrandr
 
@@ -98,7 +99,7 @@ type = internal/xwindow
 label = %title:0:15:...%
 
 [module/i3]
-type = internal/i3 
+type = internal/i3
 index-sort = true
 
 ws-icon-0 = 1;
@@ -115,12 +116,12 @@ ws-icon-default = 
 format  = <label-mode> <label-state>
 
 format-prefix = "     |  "
-;label-mode-padding = 5 
+;label-mode-padding = 5
 ;label-mode-foreground = #000
 ;label-mode-background = ${colors.primary}
 
 label-mode = %mode%
-label-mode-padding = 5 
+label-mode-padding = 5
 
 label-focused-underline=#24dd42
 label-focused-overline=#24dd42
@@ -131,7 +132,7 @@ label-focused-background = ${colors.background-alt}
 label-focused-foreground = #001100
 
 label-unfocused = %{T3}%icon%%{T-}
-label-unfocused-padding = 2  
+label-unfocused-padding = 2
 label-unfocused-foreground = #51E5B3
 
 label-visible = %{T3}%icon%%{T-}
@@ -150,7 +151,7 @@ label-visible-padding = 2
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-;format-prefix = "    " 
+;format-prefix = "    "
 ;label-mode-padding = 5
 ;label-mode-foreground = #000
 ;label-mode-background = ${colors.primary}
@@ -223,7 +224,7 @@ format-prefix-size = 2
 format-prefix-foreground = #01fd57
 format-underline = #234441
 format-overline = #234441
-format-padding = 2 
+format-padding = 2
 format-background = #0A6441
 format-radius = 8
 label = %percentage_used%%
@@ -237,7 +238,7 @@ format-connected = <ramp-signal> <label-connected>
 format-connected-background = #0A6441
 format-connected-foreground = ${color.foreground}
 format-connected-overline = #234441
-format-connected-underline = #234441 
+format-connected-underline = #234441
 format-connected-padding = 2
 label-connected = %essid%
 
@@ -334,7 +335,7 @@ format-full-prefix = " "
 format-full-prefix-foreground = #01fd57
 format-full-underline = #234441
 format-full-overline = #234441
-format-full-padding = 2 
+format-full-padding = 2
 format-full-background = #0A5564
 
 ramp-capacity-0 = 
@@ -355,7 +356,7 @@ animation-charging-framerate = 750
 
 format-discharging-underline = #234441
 format-discharging-overline = #234441
-format-discharging-padding = 2 
+format-discharging-padding = 2
 format-discharging-background = #47276D
 
 animation-discharging-0 = 
@@ -418,8 +419,19 @@ interval = 3600
 click-left = ~/Rofi-Beats/./rofi-beats-linux
 
 format = <label>
-format-prefix = "  "
+format-prefix = "   "
 label-overline = #000000
+
+
+[module/rofi-br]
+type = custom/script
+exec = echo " "
+interval = 3600
+click-left = ~/Rofi-Beats-brasil/./rofi-beats-brasil-linux
+
+format = <label>
+format-prefix = "   "
+label-overline = #01010
 
 [module/scrot]
 type = custom/script
