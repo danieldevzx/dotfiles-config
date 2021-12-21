@@ -1,0 +1,62 @@
+[options]
+#permite bold
+allow_bold = true
+# permite url cricavel
+clickable_url = true
+#fonte do terminal
+font = JetBrainsMono Nerd Font Medium 13
+
+geometry = 730x420
+
+icon_name = terminal
+
+scrollback_lines = 10000
+
+hyperlinks = false
+
+
+#opções de cursor =  "block", "undeline" or "ibeam"
+cursor_shape = underline
+
+#opções de scrollbar = "off", "left" or "right"
+scrollbar = off
+
+[colors]
+
+# special
+foreground      = #00ff00
+foreground_bold = #00ff00
+cursor          = #00ff00
+background      = rgba(0, 3, 0, 0.85)
+
+# black
+color0  = #232328
+color8  = #28283c
+
+# red
+color1  = #f94757
+color9  = #f45b69
+
+# green
+color2  = #00b159
+color10 = #28b56f
+
+# yellow
+color3  = #fcb928
+color11 = #f9c34f
+
+# blue
+color4  = #1882dc
+color12 = #308bd8
+
+# magenta
+color5  = #7474b3
+color13 = #7474b3
+
+# cyan
+color6  = #33a5db
+color14 = #5fb5de
+
+# white
+color7  = #8c7676
+color15 = #dfdfdf
