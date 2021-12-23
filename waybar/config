@@ -1,0 +1,153 @@
+//===================================================================================================//
+//                                                                                                   //
+//   _    _                ______                _____        _    _    _                            //
+//  | |  | |               | ___ \              /  ___|      | |  | |  (_)                           //
+//  | |  | |  __ _  _   _  | |_/ /  __ _  _ __  \ `--.   ___ | |_ | |_  _  _ __    __ _  ___         //
+//  | |/\| | / _` || | | | | ___ \ / _` || '__|  `--. \ / _ \| __|| __|| || '_ \  / _` |/ __|        //
+//  \  /\  /| (_| || |_| | | |_/ /| (_| || |    /\__/ /|  __/| |_ | |_ | || | | || (_| |\__ \        //
+//   \/  \/  \__,_| \__, | \____/  \__,_||_|    \____/  \___| \__| \__||_||_| |_| \__, ||___/        //
+//                   __/ |                                                         __/ |             //
+//                  |___/                                                         |___/              //
+//              :::    ::: ::::::::::: ::::    ::: :::::::::                                         //
+//              :+:   :+:      :+:     :+:+:   :+: :+:    :+:                                        //
+//              +:+  +:+       +:+     :+:+:+  +:+ +:+    +:+                                        //
+//              +#++:++        +#+     +#+ +:+ +#+ +#+    +:+                                        //
+//              +#+  +#+       +#+     +#+  +#+#+# +#+    +#+                                        //
+//              #+#   #+#      #+#     #+#   #+#+# #+#    #+#                                        //
+//              ###    ### ########### ###    #### #########                                         //
+//===================================================================================================//
+
+
+
+
+
+{
+    "layer": "bottom", // Define a pocisão da bar
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 30, // Define tamanho da bar
+
+    // Definição de coisas do modulo
+    //modulo da esquerda
+    "modules-left": ["custom/maconha","sway/workspaces","sway/mode", "custom/media", "network", "custom/rofiradio","custom/rofibeats"],
+    //modulo do meio
+    "modules-center": [
+    "clock#1",
+    "clock#2",
+    "clock#3"
+  ],
+    //modulo da direita
+
+    "modules-right": ["pulseaudio", "cpu", "memory","battery", "tray"],
+    // Configuração de modulos
+
+//Sway icones de configurações
+"sway/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+          "1": "Ⅰ",
+          "2": "Ⅱ",
+          "3": "Ⅲ",
+          "4": "Ⅳ",
+          "5": "Ⅴ",
+          "6": "Ⅵ",
+          "7": "Ⅶ",
+          "8": "Ⅷ",
+          "9": "Ⅸ",
+          "10": "Ⅹ"
+      }
+  },
+  //avisa em que mode está
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+  "clock#1": {
+    "format": "{:%A}"
+  },
+  "clock#2": {
+    "format": "{:%H:%M}"
+  },
+  "clock#3": {
+    "format": "{:%d/%m/%y}"
+  },
+  //Tray pra apps que ficam em segundo plano
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+  // Usa pra mostrar a quantidade de cpu usada
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+  // Usa para mostrar quanto de memoria ta sendo usada
+    "memory": {
+        "format": "{}% "
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "pulseaudio": {
+        //"scroll-step": 1,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+    },
+    "custom/maconha":{
+        "format": ""
+    },
+    "custom/rofiradio": {
+    "format": "",
+    "on-click": "~/Downloads/Rofi-radio/./rofi-radio",
+    },
+
+    "custom/rofibeats": {
+    "format": "",
+    "on-click": "~/Downloads/Rofi-Beats/./rofi-beats-linux",
+    },
+
+    "battery": {
+
+"states": {
+
+// "good": 95,
+
+"warning": 30,
+
+"critical": 15
+
+},
+
+// "format-good": "", // An empty format will hide the module
+
+"format": "{capacity}% {icon}",
+
+//"format-discharging": "{capacity}% {icon}",
+
+"format-charging": "{capacity}% {icon}",
+
+"format-plugged ": "{icon}",
+
+"format-icons": {
+
+"discharging": ["", "", "", "", "", "", "", "","", ""],
+
+"charging": ["", "", "", "", "", "","", ""],
+
+"plugged": "ﮣ"
+
+    }
+    },
+}
+
