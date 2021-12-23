@@ -1,6 +1,10 @@
 # <a href="https://github.com/Kind333/Arch-all-settings/tree/master"><b>Arch Linux all settings</b></a>
 Aqui vai conter grande partes das minhas configurações do arch linux para uso
+# <a href="https://github.com/Kind333/Arch-all-settings/tree/master/sway"><b>Sway wm</b></a>
+![image](https://user-images.githubusercontent.com/86479460/147191601-225cb076-28c5-4289-8d1b-5eabf97a1602.png)
 
+# <a href="https://github.com/Kind333/Arch-all-settings/tree/master/waybar"><b>WayBar</b></a>
+![image](https://user-images.githubusercontent.com/86479460/147192120-2741bd90-1ea1-4615-a2f9-c4c16eee2be9.png)
 
 # <a href ="https://github.com/Kind333/Arch-all-settings/tree/master/nvim"><b>NeoVim</b></a>
 Minhas configurações do NeoVim
