@@ -76,78 +76,59 @@
     },
   // Usa pra mostrar a quantidade de cpu usada
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}% ",
         "tooltip": false
     },
   // Usa para mostrar quanto de memoria ta sendo usada
     "memory": {
-        "format": "{}% "
+        "format": "{}% "
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} ({signalStrength}%)  ",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-disconnected": "Disconnected ⚠"
-    },
-    "pulseaudio": {
-        //"scroll-step": 1,
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "",
-        "format-icons": {
-            "headphones": "",
-            "handsfree": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", ""]
-        },
     },
     "custom/maconha":{
         "format": ""
     },
     "custom/rofiradio": {
     "format": "",
-    "on-click": "~/Downloads/Rofi-radio/./rofi-radio",
+    "on-click": "~/Downloads/rofi-radio/./rofi-radio",
     },
 
     "custom/rofibeats": {
     "format": "",
     "on-click": "~/Downloads/Rofi-Beats/./rofi-beats-linux",
     },
-
-    "battery": {
-
-"states": {
-
-// "good": 95,
-
-"warning": 30,
-
-"critical": 15
-
+"pulseaudio": {
+	"format": "{volume}% {icon}",
+	"format-bluetooth": "{volume}% {icon}",
+	"format-muted": "",
+	"format-icons": {
+		"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+		"headphones": "",
+		"handsfree": "",
+		"headset": "",
+		"phone": "",
+		"portable": "",
+		"car": "",
+		"default": ["", ""]
+	},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
 },
 
-// "format-good": "", // An empty format will hide the module
-
-"format": "{capacity}% {icon}",
-
-//"format-discharging": "{capacity}% {icon}",
-
-"format-charging": "{capacity}% {icon}",
-
-"format-plugged ": "{icon}",
-
-"format-icons": {
-
-"discharging": ["", "", "", "", "", "", "", "","", ""],
-
-"charging": ["", "", "", "", "", "","", ""],
-
-"plugged": "ﮣ"
-
-    }
+    "battery": {
+        "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
+        "format-icons": ["", "", "", "", ""],
+        "format-charging": "{icon}  {capacity}%",
+        "format-full": "{icon} Carregado",
+        "interval": 30,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
     },
 }
 

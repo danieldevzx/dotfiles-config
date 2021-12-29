@@ -42,6 +42,8 @@ window > box {
     border-radius: 4px;
     border-style: groove;
     margin-top: 1.4px;
+    font-family: C059;
+    font-size: 13px;
 }
 #workspaces button {
     padding: 0 2px;
@@ -63,21 +65,63 @@ window > box {
 }
 #pulseaudio {
     background: #0A6441;
+    border-radius: 26px;
+    margin: 0 4px;
+    padding: 0 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #dfffe3;
+    font-size:12;
 }
 #memory {
     background: #0A6441;
+    border-radius: 26px;
+    margin: 0 4px;
+    padding: 0 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #dfffe3;
+    font-size:12px;
 }
 #cpu {
     background: #0A6441;
+    border-radius: 26px;
+    margin: 0 4px;
+    padding: 0 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #dfffe3;
+    font-size:12px;
 }
 #battery {
     background: #0A6441;
+    border-radius: 26px;
+    margin: 0 4px;
+    padding: 0 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #dfffe3;
+    font-size:12px;
 }
 #battery.charging {
     background: #0A6441;
+    border-radius: 26px;
+    margin: 0 4px;
+    padding: 0 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #dfffe3;
+    font-size:12px;
 }
 #network {
     background: #0A6441;
+    border-radius: 26px;
+    margin: 0 4px;
+    padding: 0 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #dfffe3;
+    font-size:12px;
 }
 #custom-maconha {
     padding:0 13px;
@@ -113,14 +157,13 @@ window > box {
     margin-top: 1px;
     margin-bottom: 1px;
 }
-#pulseaudio, #backlight, #memory, #cpu, #temperature, #battery, #network, #tray {
+#tray {
     border-radius: 26px;
     margin: 0 4px;
     padding: 0 16px;
     margin-top: 3px;
     margin-bottom: 3px;
     color: #dfffe3;
-    font-family: monospace;
     font-size: 13px;
 
 }
