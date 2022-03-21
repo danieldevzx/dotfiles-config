@@ -12,7 +12,7 @@ Minhas configurações do NeoVim
 Necessita de pynvim, nodejs, vim-plugin
 
 # <a href ="https://github.com/Kind333/dotfiles-config/tree/master/alacritty"><b>Alacritty</b></a>
-![image](https://user-images.githubusercontent.com/86479460/146862636-64646ea9-2ffe-449a-a5a6-63d654adc56d.png)
+![image](https://user-images.githubusercontent.com/86479460/159359745-2cbe3b22-618c-4910-801e-bec156deba09.png)
 
 
 # <a href ="https://github.com/Kind333/Arch-all-settings/tree/master/script"><b>Script</b></a>
