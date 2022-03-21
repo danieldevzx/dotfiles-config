@@ -1,7 +1,8 @@
 # <a href="https://github.com/Kind333/Arch-all-settings/tree/master"><b>Arch Linux all settings</b></a>
-Aqui vai conter grande partes das minhas configurações do arch linux para uso
+Aqui vai conter grande partes das minhas configurações do Void linux para uso
 # <a href="https://github.com/Kind333/Arch-all-settings/tree/master/sway"><b>Sway wm</b></a>
-![image](https://user-images.githubusercontent.com/86479460/147191601-225cb076-28c5-4289-8d1b-5eabf97a1602.png)
+![image](https://user-images.githubusercontent.com/86479460/159360140-f25058b7-1720-4027-b6b8-9b3f0ee87eca.png)
+
 
 # <a href="https://github.com/Kind333/Arch-all-settings/tree/master/waybar"><b>WayBar</b></a>
 ![image](https://user-images.githubusercontent.com/86479460/147192120-2741bd90-1ea1-4615-a2f9-c4c16eee2be9.png)
