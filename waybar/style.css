@@ -157,7 +157,7 @@ window > box {
     margin-top: 1px;
     margin-bottom: 1px;
 }
-#tray {
+#tray,mode {
     border-radius: 26px;
     margin: 0 4px;
     padding: 0 16px;

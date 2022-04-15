@@ -24,9 +24,9 @@
 #                                                                                                                         #
 #=========================================================================================================================#
 
-
-
+##exec espeak-ng "Bem vindo"
 #### GENERAL SET ####
+
 
 # Define minha tecla mod = Window_key
 set $mod Mod4
@@ -51,7 +51,7 @@ font pango: monospace 13
 
 #### WALLPAPER ####
 # Define meu wallpaper #
-output * bg /home/knx/Imagens/wallpaper/wallpaper_green_samurai.jpg fill
+output * bg /home/knx/Imagens/wallpaper/pixelcat.jpg fill
 
 #output XWAYLAND0 scale 1368x768
 ### Minha keys
@@ -217,8 +217,8 @@ bar {
 #include /etc/sway/config.d/*
 
 default_border pixel 2
-gaps inner 13
-gaps outer 3
+gaps inner 5
+gaps outer 5
 
 ## aqui fica para definir as cores do bordas##
 client.focused          #39ff14 #39ff14 #39ff14 #39ff14   #39ff14

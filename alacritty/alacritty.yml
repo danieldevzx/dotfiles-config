@@ -1,32 +1,32 @@
 #import:
 #  - /path/to/alacritty.yml
 
-background_opacity: 0.85
+#background: 0.85
 
 window:
-  
+
   #dimensions:
   #  columns: 0
   #  lines: 0
 
-  
+
   #position:
   #  x: 0
   #  y: 0
 
-  
+
   padding:
     x: 2
     y: 5
 
- 
+
   #dynamic_padding: false
 
-  
+
   decorations: full
 
-  
-  opacity: 0.85
+
+  opacity: 0.93
 
   #class:
     # Application instance name
@@ -34,7 +34,7 @@ window:
     # General application class
     #general: Alacritty
 
-  
+
   #gtk_theme_variant: None
 
   #history: 10000
@@ -68,7 +68,7 @@ font:
 colors:
   # Default colors
   primary:
-   background: '#020a02'
+   background: '#000000'
    foreground: '#00ff00'
 
     #dim_foreground: '#828482'
@@ -150,7 +150,7 @@ colors:
   #indexed_colors: []
 
 
-  transparent_background_colors: true
+  transparent_background_colors: false
 
 
 #bell:
@@ -184,7 +184,7 @@ colors:
 
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
- 
+
   save_to_clipboard: true
 
 cursor:
@@ -225,7 +225,7 @@ cursor:
   #- { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop,   }
   #- { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
 
- 
+
 #debug:
   #render_timer: false
   #persistent_logging: false

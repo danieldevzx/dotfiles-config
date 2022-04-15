@@ -39,7 +39,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
-
+Plug 'frazrepo/vim-rainbow'
 if (has("nvim"))
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
@@ -125,7 +125,7 @@ endif
 "#---- Color scheme Tokyo ----#
 let g:tokyonight_transparent_sidebar = 0
 let g:tokyonight_style = "night"
-let g:tokyonight_transparent = 0
+
 let g:lightline = {'colorscheme': 'tokyonight'}
 "let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
 colorscheme tokyonight
@@ -135,6 +135,9 @@ colorscheme tokyonight
 "    highlight EndOfBuffer guibg=NONE ctermbg=NONE
 "endif
 
+
+"¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨| Tema rainbow |¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨"
+let g:rainbow_active = 1
 
 "¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨| Tema airline |¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨"
 let g:airline_theme = 'edge'
