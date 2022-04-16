@@ -1,4 +1,4 @@
-# <a href="https://github.com/Kind333/Arch-all-settings/tree/master"><b>Arch Linux all settings</b></a>
+# <a href="https://github.com/Kind333/Arch-all-settings/tree/master"><b>Void Linux</b></a>
 Aqui vai conter grande partes das minhas configurações do Void linux para uso
 # <a href="https://github.com/Kind333/Arch-all-settings/tree/master/sway"><b>Sway wm</b></a>
 ![image](https://user-images.githubusercontent.com/86479460/159360140-f25058b7-1720-4027-b6b8-9b3f0ee87eca.png)
