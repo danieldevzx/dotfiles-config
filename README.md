@@ -16,7 +16,7 @@ Necessita de pynvim, nodejs, vim-plugin
 ![image](https://user-images.githubusercontent.com/86479460/163656402-44bbd7c9-dc66-4a4d-aa56-a8d69404ea77.png)
 
 
-# <a href ="https://github.com/Kind333/dotfiles-config/tree/master/.scripts"<b>Script</b></a>
+# <a href ="https://github.com/Kind333/dotfiles-config/tree/master/.scripts"><b>Script</b></a>
 
 # Dependeces
 
