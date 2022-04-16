@@ -16,8 +16,7 @@ Necessita de pynvim, nodejs, vim-plugin
 ![image](https://user-images.githubusercontent.com/86479460/163656402-44bbd7c9-dc66-4a4d-aa56-a8d69404ea77.png)
 
 
-# <a href ="https://github.com/Kind333/Arch-all-settings/tree/master/script"><b>Script</b></a>
-  <h3> Para utilizar alguns dos scrpits da rofi e necessario ter <a href = "https://github.com/adi1090x/rofi">Adi1090x theme<a/></h3>
+# <a href ="https://github.com/Kind333/dotfiles-config/tree/master/.scripts"<b>Script</b></a>
 
 # Dependeces
 
