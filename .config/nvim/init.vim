@@ -42,6 +42,7 @@ Plug 'preservim/nerdtree'
 Plug 'frazrepo/vim-rainbow'
 Plug 'neoclide/coc.nvim' , { 'branch' : 'release' }
 Plug 'honza/vim-snippets'
+Plug 'shime/vim-livedown'
 if (has("nvim"))
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'

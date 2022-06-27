@@ -1,29 +1,3 @@
-#=========================================================================================================================#
-#                                                       								                                  #
-#	 _____                                           _    _    _                            _                             #
-#	/  ___|                                         | |  | |  (_)                          | |                            #
-#	\ `--. __      __  __ _  _   _        ___   ___ | |_ | |_  _  _ __    __ _  ___        | |__   _   _                  #
-#	 `--. \\ \ /\ / / / _` || | | |      / __| / _ \| __|| __|| || '_ \  / _` |/ __|       | '_ \ | | | |                 #
-#	/\__/ / \ V  V / | (_| || |_| |      \__ \|  __/| |_ | |_ | || | | || (_| |\__ \       | |_) || |_| |                 #
-#	\____/   \_/\_/   \__,_| \__, |      |___/ \___| \__| \__||_||_| |_| \__, ||___/       |_.__/  \__, |                 #
-#                            __/ |                                       __/ |                     __/ |                  #
-#                           |___/                                       |___/                     |___/                   #
-#     															                                                          #
-#                                                                                                                         #
-#                               :::    ::: ::::::::::: ::::    ::: :::::::::                                              #
-#                               :+:   :+:      :+:     :+:+:   :+: :+:    :+:                                             #
-#                               +:+  +:+       +:+     :+:+:+  +:+ +:+    +:+                                             #
-#                               +#++:++        +#+     +#+ +:+ +#+ +#+    +:+                                             #
-#                               +#+  +#+       +#+     +#+  +#+#+# +#+    +#+                                             #
-#                               #+#   #+#      #+#     #+#   #+#+# #+#    #+#                                             #
-#                               ###    ### ########### ###    #### #########                                              #
-#                                                                                                                         #
-#                                                                                                                         #
-#                                                                                                                         #
-#                                                                                                                         #
-#                                                                                                                         #
-#=========================================================================================================================#
-
 ##exec espeak-ng "Bem vindo"
 #### GENERAL SET ####
 
@@ -36,7 +10,7 @@ set $down j
 set $up k
 #set $right
 # Define meu emulador de terminal
-set $term alacritty
+set $term foot
 # Define minha opção de pesquisa de aplicativos
 set $menu rofi -show drun
 # Define teclado padrão Brasil
@@ -51,7 +25,7 @@ font pango: monospace 13
 
 #### WALLPAPER ####
 # Define meu wallpaper #
-output * bg /home/knx/img/wallpaper/pixelcat.jpg fill
+output * bg /home/knx/img/wallpaper/wallpaper.jpg fill
 
 #output XWAYLAND0 scale 1368x768
 ### Minha keys
@@ -216,8 +190,8 @@ bar {
 #include /etc/sway/config.d/*
 
 default_border pixel 1
-gaps inner 10
-gaps outer 0
+gaps inner 4
+gaps outer 2
 smart_borders on
 
 ## aqui fica para definir as cores do bordas##
@@ -245,11 +219,11 @@ bindsym $mod+Shift+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | se
 
 
 
-bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5% | notify-send "aumentando +"
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5% | notify-send "diminuindo -"
+bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle | notify-send "mute | desmute"
 
-bindsym XF86MonBrightnessDown exec brightnessctl set -10%
-bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%- | /home/knx/.scripts/./br.sh down
+bindsym XF86MonBrightnessUp exec brightnessctl set +10% | /home/knx/.scripts/./br.sh up
 
 include /etc/sway/config.d/*

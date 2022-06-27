@@ -131,7 +131,7 @@ window > box {
     margin-top: 1px;
     margin-bottom: 1px;
 }
-#custom-rofiradio {
+#custom-rofiradio, #custom-updates {
 
     background: rgb(2, 10, 1);
     border-radius: 4px;

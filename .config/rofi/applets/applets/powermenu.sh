@@ -61,7 +61,7 @@ case $chosen in
         ;;
     $lock)
 		if [[ -f /usr/bin/swaylock ]]; then
-		   swaylock -i ~/img/wallpaper/wallpaper2.png
+		   swaylock -i ~/img/wallpaper/wallpaper.png
 		elif [[ -f /usr/bin/betterlockscreen ]]; then
 			betterlockscreen -l
 		fi
@@ -70,11 +70,7 @@ case $chosen in
 		ans=$(confirm_exit &)
 		if [[ $ans == "sim" || $ans == "SIM" || $ans == "s" || $ans == "S" ]]; then
 			if [[ "$DESKTOP_SESSION" == "sway" ]]; then
-				sway --exit
-			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
-				bspc quit
-			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
-				i3-msg exit
+				swaymsg exit
 			fi
 		elif [[ $ans == "não" || $ans == "NÃO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0

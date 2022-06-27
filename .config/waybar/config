@@ -1,25 +1,5 @@
 //===================================================================================================//
-//                                                                                                   //
-//   _    _                ______                _____        _    _    _                            //
-//  | |  | |               | ___ \              /  ___|      | |  | |  (_)                           //
-//  | |  | |  __ _  _   _  | |_/ /  __ _  _ __  \ `--.   ___ | |_ | |_  _  _ __    __ _  ___         //
-//  | |/\| | / _` || | | | | ___ \ / _` || '__|  `--. \ / _ \| __|| __|| || '_ \  / _` |/ __|        //
-//  \  /\  /| (_| || |_| | | |_/ /| (_| || |    /\__/ /|  __/| |_ | |_ | || | | || (_| |\__ \        //
-//   \/  \/  \__,_| \__, | \____/  \__,_||_|    \____/  \___| \__| \__||_||_| |_| \__, ||___/        //
-//                   __/ |                                                         __/ |             //
-//                  |___/                                                         |___/              //
-//              :::    ::: ::::::::::: ::::    ::: :::::::::                                         //
-//              :+:   :+:      :+:     :+:+:   :+: :+:    :+:                                        //
-//              +:+  +:+       +:+     :+:+:+  +:+ +:+    +:+                                        //
-//              +#++:++        +#+     +#+ +:+ +#+ +#+    +:+                                        //
-//              +#+  +#+       +#+     +#+  +#+#+# +#+    +#+                                        //
-//              #+#   #+#      #+#     #+#   #+#+# #+#    #+#                                        //
-//              ###    ### ########### ###    #### #########                                         //
-//===================================================================================================//
-
-
-
-
+//Configuração basica//
 
 {
     "layer": "bottom", // Define a pocisão da bar
@@ -28,7 +8,7 @@
 
     // Definição de coisas do modulo
     //modulo da esquerda
-    "modules-left": ["custom/maconha","sway/workspaces","sway/mode", "custom/media", "network", "custom/rofiradio","custom/rofibeats"],
+    "modules-left": ["custom/maconha","sway/workspaces","sway/mode", "custom/media", "network", "custom/updates"],
     //modulo do meio
     "modules-center": [
     "clock#1",
@@ -94,7 +74,7 @@
     },
     "custom/rofiradio": {
     "format": "",
-    "on-click": "~/Downloads/rofi-radio/./rofi-radio",
+    "on-click": "~/doc/rofi/rofi-radio/./rofi-radio",
     },
 
     "custom/rofibeats": {
@@ -117,6 +97,15 @@
 	"scroll-step": 1,
 	"on-click": "pavucontrol"
 },
+   "custom/updates": {
+    "exec": "xbps-install -Mun | grep update | wc -l",
+    "exec-if": "exit 0",
+    "on-click":"alacritty -e doas xbps-install -Suv",
+    "format": " {}",
+    "interval": 100,
+    "tooltip": false,
+    "signal": 10
+  },
 
     "battery": {
         "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
