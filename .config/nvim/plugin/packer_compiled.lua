@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/knx/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -124,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/knx/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -144,6 +154,11 @@ _G.packer_plugins = {
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/knx/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -158,11 +173,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["statusline.lua"] = {
-    loaded = true,
-    path = "/home/knx/.local/share/nvim/site/pack/packer/start/statusline.lua",
-    url = "https://github.com/beauwilliams/statusline.lua"
   },
   ["telescope.nvim"] = {
     loaded = true,

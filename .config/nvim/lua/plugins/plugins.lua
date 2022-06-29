@@ -6,7 +6,6 @@ return require('packer').startup(function()
     use 'folke/tokyonight.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'lukas-reineke/indent-blankline.nvim'
-    use 'beauwilliams/statusline.lua'
     use 'norcalli/nvim-colorizer.lua'
     use 'windwp/nvim-autopairs'
     use 'tpope/vim-surround'
@@ -19,6 +18,12 @@ return require('packer').startup(function()
     use 'saadparwaiz1/cmp_luasnip'
     use 'L3MON4D3/LuaSnip'
     use 'rafamadriz/friendly-snippets'
+    use {'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+    use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+    use { 'kyazdani42/nvim-tree.lua',requires = { 'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    }
     use 'ray-x/lsp_signature.nvim'
     use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
     use 'onsails/lspkind-nvim'

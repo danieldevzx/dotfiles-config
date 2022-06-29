@@ -4,3 +4,5 @@ vim.cmd([[ vnoremap <C-s> <Esc>:w<CR> ]])
 
 vim.cmd([[ map <C-a> ggVG ]])
 
+vim.cmd([[ nnoremap <C-e> :NvimTreeToggle<CR>]])
+vim.cmd([[ nnoremap <C-f> :Telescope live_grep<CR>]])

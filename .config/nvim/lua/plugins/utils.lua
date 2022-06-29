@@ -1,8 +1,5 @@
 require'nvim-web-devicons'.get_icons()
 
-
-require('statusline')
-
 vim.opt.listchars:append("space:⋅")
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent2 guifg=#E5C07B gui=nocombine]]
@@ -36,3 +33,27 @@ require('nvim-autopairs').setup({
   enable_check_bracket_line = false
 })
 
+require('telescope').setup()
+
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  view = {
+    adaptive_size = true,
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
+    },
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})
+
+require('lualine').setup()
+
+vim.opt.termguicolors = true
+require("bufferline").setup{}
