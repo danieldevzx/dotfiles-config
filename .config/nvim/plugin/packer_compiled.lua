@@ -184,6 +184,11 @@ _G.packer_plugins = {
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/knx/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
   ["vim-simple-emoji"] = {
     loaded = true,
     path = "/home/knx/.local/share/nvim/site/pack/packer/start/vim-simple-emoji",

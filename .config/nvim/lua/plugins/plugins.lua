@@ -19,6 +19,7 @@ return require('packer').startup(function()
     use 'L3MON4D3/LuaSnip'
     use 'rafamadriz/friendly-snippets'
     use {'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+    use 'voldikss/vim-floaterm'
     use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
     use { 'kyazdani42/nvim-tree.lua',requires = { 'kyazdani42/nvim-web-devicons', -- optional, for file icons
     },
