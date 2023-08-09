@@ -8,7 +8,7 @@
 
     // Definição de coisas do modulo
     //modulo da esquerda
-    "modules-left": ["custom/maconha","sway/workspaces","sway/mode", "custom/media", "network", "custom/updates"],
+    "modules-left": ["custom/flor","sway/workspaces","sway/mode", "custom/media", "network", "custom/updates"],
     //modulo do meio
     "modules-center": [
     "clock#1",
@@ -69,7 +69,7 @@
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-disconnected": "Disconnected ⚠"
     },
-    "custom/maconha":{
+    "custom/flor":{
         "format": ""
     },
     "custom/rofiradio": {
