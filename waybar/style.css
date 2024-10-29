@@ -1,0 +1,61 @@
+* {
+    font-size: 15px;
+    font-family: "Roboto Mono Medium", Roboto, Helvetica, Arial, sans-serif, "Font Awesome 5 Free", FontAwesome;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces {
+    background: rgba(3, 9, 0, 0.8);
+    border: 2px solid #f4ffdb;
+    border-radius: 20px;
+    margin: 2px;
+    font-family: "Roboto Mono Medium", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+#workspaces button {
+    border-radius: 12px;
+    font-size: 13px;
+    color: #f4ffdb;
+}
+
+#workspaces button.active {
+    color: #000000;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 100%;
+}
+
+#workspaces button:hover {
+    border-radius: 50px;
+    background-color: #ff0000;
+    color: #f4ffdb;
+}
+
+#custom-rofibeats {
+    background: rgb(8, 191, 60);
+    border-radius: 4px;
+    color: #dfffe3;
+    padding: 0 14px;
+    margin-left: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#tray,
+#mode,
+#clock,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery {
+    border: 2px solid #f4ffdb;
+    border-radius: 20px;
+    background: rgba(3, 9, 0, 0.8);
+    color: #dfffe3;
+    padding: 5px 15px;
+    margin: 5px;
+}

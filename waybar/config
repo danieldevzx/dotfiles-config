@@ -1,0 +1,114 @@
+//===================================================================================================//
+//Configuração basica//
+
+{
+    "layer": "top", // Define a pocisão da bar
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 10, // Define tamanho da bar
+
+    // Definição de coisas do modulo
+    //modulo da esquerda
+    "modules-left": ["network", "clock#1","clock#3"],
+    
+    //modulo do meio
+    "modules-center": [
+	"hyprland/workspaces"	
+  ],
+    //modulo da direita
+
+    "modules-right": ["pulseaudio", "cpu", "memory","battery","battery#bat2", "clock#2","tray"],
+    // Configuração de modulos
+
+//Hyprland icones de configurações
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+          "1": "Ⅰ",
+          "2": "Ⅱ",
+          "3": "Ⅲ",
+          "4": "Ⅳ",
+          "5": "Ⅴ",
+          "6": "Ⅵ",
+          "7": "Ⅶ",
+          "8": "Ⅷ",
+          "9": "Ⅸ",
+          "10": "Ⅹ"
+      }
+    },
+
+
+  "clock#1": {
+    "format": "{:%A}"
+  },
+  "clock#2": {
+    "format": "{:%H:%M}"
+  },
+  "clock#3": {
+    "format": "{:%d/%m/%y}"
+  },
+  //Tray pra apps que ficam em segundo plano
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+  // Usa pra mostrar a quantidade de cpu usada
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+  // Usa para mostrar quanto de memoria ta sendo usada
+    "memory": {
+        "format": "{}% "
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%)  ",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠",
+    },
+"pulseaudio": {
+	"format": "{volume}% {icon}",
+	"format-bluetooth": "{volume}% {icon}",
+	"format-muted": "",
+	"format-icons": {
+		"headphones": "",
+		"handsfree": "",
+		"headset": "",
+		"phone": "",
+		"portable": "",
+		"car": "",
+		"default": ["", ""]
+	},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
+},
+
+    "battery": {
+        "format": "1 : <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
+        "format-icons": ["", "", "", "", ""],
+	"bat": "BAT0",
+        "format-charging": "1 : {icon}  {capacity}%",
+        "format-full": "1 : {icon} Carregado",
+        "interval": 30,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+    },
+    "battery#bat2": {
+        "format": "2 : <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
+        "format-icons": ["", "", "", "", ""],
+	"bat": "BAT1",
+        "format-charging": "2 : {icon}  {capacity}%",
+        "format-full": "2 : {icon} Carregado",
+        "interval": 30,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+    },
+}
+
