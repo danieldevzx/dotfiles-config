@@ -1,4 +1,4 @@
-# <a href="https://github.com/Kind333/Arch-all-settings/tree/master"><b>Void Linux</b></a>
+# <a href="https://github.com/void-linux"><b>Void Linux</b></a>
 Minhas configurações no linux
 # <a href="https://github.com/hyprwm/Hyprland"><b>Hyprland</b></a>
 ![image](https://github.com/user-attachments/assets/cc286563-e571-455d-bb62-d31115cda652)
