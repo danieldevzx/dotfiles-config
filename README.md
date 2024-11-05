@@ -1,4 +1,4 @@
-# <a href="https://voidlinux.org/"><b>Void Linux</b></a>
+# <a href="https://fedoraproject.org/"><b>Fedora linux</b></a>
 Minhas configurações no linux
 # <a href="https://github.com/hyprwm/Hyprland"><b>Hyprland</b></a>
 ![image](https://github.com/user-attachments/assets/cc286563-e571-455d-bb62-d31115cda652)
